@@ -1,6 +1,5 @@
-function add(a:number, b:number) {
-    return a+b
+function genError(message: string, code: number) {
+    throw {message: message, Code: code};
 }
 
-const res = add(5,10)
-console.log(res)
+genError("Erronr gene", 500)
